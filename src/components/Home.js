@@ -1,179 +1,38 @@
 import React from 'react'
-// import Cards from './Home'
-import { IoPeopleOutline } from 'react-icons/io5';
-import { IoSpeedometerOutline } from 'react-icons/io5';
-import { IoFlashOutline } from 'react-icons/io5';
-import { FaHeart } from 'react-icons/fa';
-import { IoApertureOutline } from 'react-icons/io5';
-import Car2 from './Images/car-2.jpg'
-import Car1 from './Images/car-1.jpg'
-import Car3 from './Images/car-3.jpg'
-import Car4 from './Images/car-4.jpg'
-import Car5 from './Images/car-5.jpg'
-import Car6 from './Images/car-6.jpg'
-import Cards from './Cards'
-const Home = () => {
+import Layout from './Layout'
+import car1 from './Images/hero-banner.jpg'
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { FaUserPlus } from 'react-icons/fa';
+const Home = (props) => {
     return (
-        <Cards>
-            <div className='grid grid-cols-3 gap-7 mt-8'>
-                <div className=''>
-                    <div className=' h-[500px] bg-slate-200 shadow-xl shadow-slate-300 border-2 border-white rounded-2xl'>
-                        <img src={Car1} className='rounded-3xl px-3 pt-3'></img>
-                        <div className='px-6'>
-                            <div className='flex justify-between  mt-5'>
-                                <h1 className='text-2xl'>Toyota RAV4</h1>
-                                <h1 className='text-xl outline-dashed px-3 rounded-xl outline-blue-500'>2021</h1>
-                            </div>
-                            <div className=' grid grid-cols-2 gap-4 mt-5'>
-                                <div className='flex gap-3'><IoPeopleOutline className='text-blue-400 text-2xl' /><h1>4 people</h1></div>
-                                <div className='flex gap-3'><IoSpeedometerOutline className='text-blue-400 text-2xl' /><h1>7.7km/1-litre</h1></div>
-                                <div className='flex gap-3'><IoFlashOutline className='text-blue-400 text-2xl' /><h1>Gasoline</h1></div>
-                                <div className='flex gap-3'><IoApertureOutline className='text-blue-400 text-2xl' /><h1>Automatic</h1></div>
-
-                            </div>
-                            <div className='h-[2px] w-full bg-slate-950 mt-4'></div>
-                            <div className='flex justify-between mt-5'>
-                                <h1 className='text-xl text-slate-950'>$620/month</h1>
-                                <div className='flex gap-3'>
-                                    <div className='px-4 bg-blue-200 py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                    <button className='rounded-2xl bg-blue-400 px-7 py-2 font-semibold text-white'>Rent now</button>
-                                </div>
-                            </div>
-                        </div>
+        <Layout>
+            <div className='flex gap-[20%]'>
+                <div className='pt-[15%] pl-[13%]'>
+                    <h1 className='  text-slate-950 text-[35px] font-semibold'>THE EASY WAY TO <br></br> TAKEOVER A LEASE</h1>
+                    {/* <input type='text'></input> */}
+                </div>
+                <img src={car1} className='h-[42%] w-[44%] rounded-3xl mt-[2%]'></img>
+            </div>
+            <div className='px-[13%]'>
+                <div className='flex justify-between mt-10'>
+                    <h1 className='text-4xl text-slate-950'>Featured cars</h1>
+                    <div className='flex gap-3'>
+                        <button className='text-xl -mt-6'>View more</button>
+                        <AiOutlineArrowRight className='text-blue-400 text-xl' />
                     </div>
                 </div>
-                <div className=''>
-                    <div className='h-[500px] bg-slate-200 shadow-xl shadow-slate-300 border-2 border-white rounded-2xl'>
-                        <img src={Car2} className='rounded-3xl px-3 pt-3'></img>
-                        <div className='px-6'>
-                            <div className='flex justify-between  mt-5'>
-                                <h1 className='text-2xl'>BMW 3 Series</h1>
-                                <h1 className='text-xl outline-dashed px-3 rounded-xl outline-blue-500'>2019</h1>
-                            </div>
-                            <div className=' grid grid-cols-2 gap-4 mt-5'>
-                                <div className='flex gap-3'><IoPeopleOutline className='text-blue-400 text-2xl' /><h1>4 people</h1></div>
-                                <div className='flex gap-3'><IoSpeedometerOutline className='text-blue-400 text-2xl' /><h1>8.2km/1-litre</h1></div>
-                                <div className='flex gap-3'><IoFlashOutline className='text-blue-400 text-2xl' /><h1>Gasoline</h1></div>
-                                <div className='flex gap-3'><IoApertureOutline className='text-blue-400 text-2xl' /><h1>Automatic</h1></div>
-
-                            </div>
-                            <div className='h-[2px] w-full bg-slate-950 mt-4'></div>
-                            <div className='flex justify-between mt-5'>
-                                <h1 className='text-xl text-slate-950'>$350/month</h1>
-                                <div className='flex gap-3'>
-                                    <div className='px-4 bg-blue-200 py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                    <button className='rounded-2xl bg-blue-400 px-7 py-2 font-semibold text-white'>Rent now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className=''>
-                    <div className='h-[500px] bg-slate-200 shadow-xl shadow-slate-300 border-2 border-white rounded-2xl'>
-                        <img src={Car3} className='rounded-3xl px-3 pt-3'></img>
-                        <div className='px-6'>
-                            <div className='flex justify-between  mt-5'>
-                                <h1 className='text-2xl'>Cadillac Escalade</h1>
-                                <h1 className='text-xl outline-dashed px-3 rounded-xl outline-blue-500'>2020</h1>
-                            </div>
-                            <div className=' grid grid-cols-2 gap-4 mt-5'>
-                                <div className='flex gap-3'><IoPeopleOutline className='text-blue-400 text-2xl' /><h1>4 people</h1></div>
-                                <div className='flex gap-3'><IoSpeedometerOutline className='text-blue-400 text-2xl' /><h1>7.7km/1-litre</h1></div>
-                                <div className='flex gap-3'><IoFlashOutline className='text-blue-400 text-2xl' /><h1>Gasoline</h1></div>
-                                <div className='flex gap-3'><IoApertureOutline className='text-blue-400 text-2xl' /><h1>Automatic</h1></div>
-
-                            </div>
-                            <div className='h-[2px] w-full bg-slate-950 mt-4'></div>
-                            <div className='flex justify-between mt-5'>
-                                <h1 className='text-xl text-slate-950'>$620/month</h1>
-                                <div className='flex gap-3'>
-                                    <div className='px-4 bg-blue-200 py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                    <button className='rounded-2xl bg-blue-400 px-7 py-2 font-semibold text-white'>Rent now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className=''>
-                    <div className='h-[500px] bg-slate-200 shadow-xl shadow-slate-300 border-2 border-white rounded-2xl'>
-                        <img src={Car4} className='rounded-3xl px-3 pt-3'></img>
-                        <div className='px-6'>
-                            <div className='flex justify-between  mt-5'>
-                                <h1 className='text-2xl'>Volkswagen T-Cross</h1>
-                                <h1 className='text-xl outline-dashed px-3 rounded-xl outline-blue-500'>2020</h1>
-                            </div>
-                            <div className=' grid grid-cols-2 gap-4 mt-5'>
-                                <div className='flex gap-3'><IoPeopleOutline className='text-blue-400 text-2xl' /><h1>4 people</h1></div>
-                                <div className='flex gap-3'><IoSpeedometerOutline className='text-blue-400 text-2xl' /><h1>7.7km/1-litre</h1></div>
-                                <div className='flex gap-3'><IoFlashOutline className='text-blue-400 text-2xl' /><h1>Gasoline</h1></div>
-                                <div className='flex gap-3'><IoApertureOutline className='text-blue-400 text-2xl' /><h1>Automatic</h1></div>
-
-                            </div>
-                            <div className='h-[2px] w-full bg-slate-950 mt-4'></div>
-                            <div className='flex justify-between mt-5'>
-                                <h1 className='text-xl text-slate-950'>$400/month</h1>
-                                <div className='flex gap-3'>
-                                    <div className='px-4 bg-blue-200 py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                    <button className='rounded-2xl bg-blue-400 px-7 py-2 font-semibold text-white'>Rent now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className=''>
-                    <div className='h-[500px] bg-slate-200 shadow-xl shadow-slate-300 border-2 border-white rounded-2xl'>
-                        <img src={Car5} className='rounded-3xl px-3 pt-3'></img>
-                        <div className='px-6'>
-                            <div className='flex justify-between  mt-5'>
-                                <h1 className='text-2xl'>BMW 4 Series GTI</h1>
-                                <h1 className='text-xl outline-dashed px-3 rounded-xl outline-blue-500'>2021</h1>
-                            </div>
-                            <div className=' grid grid-cols-2 gap-4 mt-5'>
-                                <div className='flex gap-3'><IoPeopleOutline className='text-blue-400 text-2xl' /><h1>4 people</h1></div>
-                                <div className='flex gap-3'><IoSpeedometerOutline className='text-blue-400 text-2xl' /><h1>7.6km/1-litre</h1></div>
-                                <div className='flex gap-3'><IoFlashOutline className='text-blue-400 text-2xl' /><h1>Gasoline</h1></div>
-                                <div className='flex gap-3'><IoApertureOutline className='text-blue-400 text-2xl' /><h1>Automatic</h1></div>
-
-                            </div>
-                            <div className='h-[2px] w-full bg-slate-950 mt-4'></div>
-                            <div className='flex justify-between mt-5'>
-                                <h1 className='text-xl text-slate-950'>$400/month</h1>
-                                <div className='flex gap-3'>
-                                    <div className='px-4 bg-blue-200 py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                    <button className='rounded-2xl bg-blue-400 px-7 py-2 font-semibold text-white'>Rent now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className=''>
-                    <div className='h-[500px] bg-slate-200 shadow-xl shadow-slate-300 border-2 border-white rounded-2xl'>
-                        <img src={Car6} className='rounded-3xl px-3 pt-3'></img>
-                        <div className='px-6'>
-                            <div className='flex justify-between  mt-5'>
-                                <h1 className='text-2xl'>BMW 4 Series GTI</h1>
-                                <h1 className='text-xl outline-dashed px-3 rounded-xl outline-blue-500'>2021</h1>
-                            </div>
-                            <div className=' grid grid-cols-2 gap-4 mt-5'>
-                                <div className='flex gap-3'><IoPeopleOutline className='text-blue-400 text-2xl' /><h1>4 people</h1></div>
-                                <div className='flex gap-3'><IoSpeedometerOutline className='text-blue-400 text-2xl' /><h1>7.2km/1-litre</h1></div>
-                                <div className='flex gap-3'><IoFlashOutline className='text-blue-400 text-2xl' /><h1>Gasoline</h1></div>
-                                <div className='flex gap-3'><IoApertureOutline className='text-blue-400 text-2xl' /><h1>Automatic</h1></div>
-
-                            </div>
-                            <div className='h-[2px] w-full bg-slate-950 mt-4'></div>
-                            <div className='flex justify-between mt-5'>
-                                <h1 className='text-xl text-slate-950'>$490/month</h1>
-                                <div className='flex gap-3'>
-                                    <div className='px-4 bg-blue-200 py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                    <button className='rounded-2xl bg-blue-400 px-7 py-2 font-semibold text-white'>Rent now</button>
-                                </div>
-                            </div>
+                {props.children}
+                <div>
+                    <h1 className='text-3xl my-[10px]'>Get started with 4 simple steps</h1>
+                    <div>
+                        <div className='h-[250px] rounded-xl bg-white w-[350px]'>
+                            <div className='rounded-lg px-3 bg-red-100 mx-[38%] py-3 w-fit'><FaUserPlus className='text-red-800 text-4xl' /></div>
+                            <h1>Create a profile<br></br><br></br>If you are going to use a<br></br> passage of Lorem Ipsum, you<br></br> need to be sure.</h1>
                         </div>
                     </div>
                 </div>
             </div>
-        </Cards>
+        </Layout>
     )
 }
 
