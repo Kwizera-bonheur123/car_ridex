@@ -23,11 +23,12 @@ const Home = (props) => {
                 </div>
                 {props.children}
                 <div>
-                    <h1 className='text-3xl my-[10px]'>Get started with 4 simple steps</h1>
+                    <h1 className='text-3xl my-[30px]'>Get started with 4 simple steps</h1>
                     <div>
-                        <div className='h-[250px] rounded-xl bg-white w-[350px]'>
-                            <div className='rounded-lg px-3 bg-red-100 mx-[38%] py-3 w-fit'><FaUserPlus className='text-red-800 text-4xl' /></div>
-                            <h1>Create a profile<br></br><br></br>If you are going to use a<br></br> passage of Lorem Ipsum, you<br></br> need to be sure.</h1>
+                        <div className='h-[250px] rounded-xl pt-1 bg-white w-[350px]'>
+                            <div className='rounded-lg px-3 bg-red-100 mx-[42%] my-2 py-3 w-fit'><FaUserPlus className='text-red-800 text-4xl' /></div>
+                            
+                            <h1 className='text-center'>Create a profile<br></br><br></br>If you are going to use a<br></br> passage of Lorem Ipsum, you<br></br> need to be sure.</h1>
                         </div>
                     </div>
                 </div>
