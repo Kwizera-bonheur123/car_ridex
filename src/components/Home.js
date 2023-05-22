@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from './Layout'
-import car1 from './Images/hero-banner.jpg'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { FaUserPlus } from 'react-icons/fa';
 import Blog1 from './Images/blog-1.jpg'
@@ -19,8 +18,9 @@ const Home = (props) => {
                 <img src={car1} className='h-[42%] w-[44%] rounded-3xl mt-[2%]'></img>
             </div> */}
             <div className='home'></div>
-            <div className=' bg-slate-500/70 w-full h-[680px] mt-20 absolute top-0'>
-                <h1 className='text-4xl font-bold text-slate-300 pt-[10%] pl-10'>THE EASY WAY TO TAKE TO<br></br>TAKEOVER A LEASE<br></br>TRUSTED PROCESS</h1>
+            <div className=' bg-slate-600/60 pl-10 pt-[10%] w-full h-[680px] mt-20 absolute top-0'>
+                <h1 className='text-4xl font-bold text-slate-300'>THE EASY WAY TO TAKE TO<br></br>TAKEOVER A LEASE<br></br>TRUSTED PROCESS</h1>
+                <button className='px-10 py-5 bg-slate-400 text-xl mt-6 rounded-2xl font-bold text-gray-50'>Get Started  &#8594;</button>
             </div>
             <div className='px-[13%]'>
                 <div className='flex justify-between mt-10'>
@@ -32,7 +32,7 @@ const Home = (props) => {
                 </div>
                 {props.children}
                 <div>
-                    <h1 className='text-3xl my-[30px]'>Get started with 4 simple steps</h1>
+                    <h1 className='text-3xl my-[30px] text-slate-700'>Get started with 4 simple steps</h1>
                     <div className='flex gap-8'>
                         <div className='h-[250px] rounded-xl pt-1 bg-white hover:bg-blue-50 w-[310px]'>
                             <div className='rounded-lg px-3 bg-rose-100 mx-[40%] my-2 py-3 w-fit'><FaUserPlus className='text-rose-300 text-2xl' /></div>
@@ -56,7 +56,7 @@ const Home = (props) => {
                             <h1 className='text-center text-gray-500'>There are many variations of<br></br>passages of Lorem available,<br></br>but the majority have suffered<br></br>alteration</h1>
                         </div>
                     </div>
-                    <h1>Our Blog</h1>
+                    <h1 className='text-3xl my-5 font-semibold text-slate-700'>Our Blog</h1>
                     <div className='flex gap-6 overflow-x-auto whitespace-nowrap'>
                         <div className='w-[28%] h-fit bg-slate-200 shadow-lg rounded-xl pb-7 border-2 border-white'>
                             <img src={Blog1} className='rounded-t-2xl'></img>
@@ -104,5 +104,4 @@ const Home = (props) => {
         </Layout>
     )
 }
-
 export default Home
