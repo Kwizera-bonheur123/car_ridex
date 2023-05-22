@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from './Layout'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { FaUserPlus } from 'react-icons/fa';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import Blog1 from './Images/blog-1.jpg'
 import Blog2 from './Images/blog-2.jpg'
 import Blog3 from './Images/blog-3.jpg'
@@ -9,6 +11,25 @@ import Blog4 from './Images/blog-4.jpg'
 import Blog5 from './Images/blog-5.jpg'
 import Car2 from './Images/car-2.jpg'
 const Home = (props) => {
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
     return (
         <Layout>
             {/* <div className='flex gap-[20%]'>
@@ -57,7 +78,49 @@ const Home = (props) => {
                         </div>
                     </div>
                     <h1 className='text-3xl my-5 font-semibold text-slate-700'>Our Blog</h1>
-                    <div className='flex gap-6 overflow-x-auto whitespace-nowrap'>
+                    <Carousel className='flex gap-5' responsive={responsive}>
+                        <div className='mx-4 bg-slate-200 shadow-xl rounded-xl pb-7 border-2 border-white shadow-blue-300'>
+                            <img src={Blog1} className='rounded-t-2xl'></img>
+                            <h1 className='text-2xl px-6 mt-4 font-normal text-gray-600 text-left'>Opening of new office of the company</h1>
+                            <div className='flex justify-between px-6 mt-3'>
+                                <button className='text-blue-600 text-lg cursor-pointer'>Read more...</button>
+                                <h1 className='text-gray-500 text-md'>January 14,2022</h1>
+                            </div>
+                        </div>
+                        <div className='mx-4 bg-slate-200 shadow-xl rounded-xl pb-7 border-2 border-white shadow-blue-300'>
+                            <img src={Blog2} className='rounded-t-2xl'></img>
+                            <h1 className='text-2xl px-6 mt-4 font-normal text-gray-600 text-left'>Opening of new office of the company</h1>
+                            <div className='flex justify-between px-6 mt-3'>
+                                <button className='text-blue-600 text-lg cursor-pointer'>Read more...</button>
+                                <h1 className='text-gray-500 text-md'>January 14,2022</h1>
+                            </div>
+                        </div>
+                        <div className='mx-4 bg-slate-200 shadow-xl rounded-xl pb-7 border-2 border-white shadow-blue-300'>
+                            <img src={Blog3} className='rounded-t-2xl'></img>
+                            <h1 className='text-2xl px-6 mt-4 font-normal text-gray-600 text-left'>Opening of new office of the company</h1>
+                            <div className='flex justify-between px-6 mt-3'>
+                                <button className='text-blue-600 text-lg cursor-pointer'>Read more...</button>
+                                <h1 className='text-gray-500 text-md'>January 14,2022</h1>
+                            </div>
+                        </div>
+                        <div className='mx-4 bg-slate-200 shadow-xl rounded-xl pb-7 border-2 border-white shadow-blue-300'>
+                            <img src={Blog4} className='rounded-t-2xl'></img>
+                            <h1 className='text-2xl px-6 mt-4 font-normal text-gray-600 text-left'>Opening of new office of the company</h1>
+                            <div className='flex justify-between px-6 mt-3'>
+                                <button className='text-blue-600 text-lg cursor-pointer'>Read more...</button>
+                                <h1 className='text-gray-500 text-md'>January 14,2022</h1>
+                            </div>
+                        </div>
+                        <div className='mx-4 bg-slate-200 shadow-xl rounded-xl pb-7 border-2 border-white shadow-blue-300'>
+                            <img src={Blog5} className='rounded-t-2xl'></img>
+                            <h1 className='text-2xl px-6 mt-4 font-normal text-gray-600 text-left'>Opening of new office of the company</h1>
+                            <div className='flex justify-between px-6 mt-3'>
+                                <button className='text-blue-600 text-lg cursor-pointer'>Read more...</button>
+                                <h1 className='text-gray-500 text-md'>January 14,2022</h1>
+                            </div>
+                        </div>
+                    </Carousel>
+                    {/* <div className='flex gap-6 overflow-x-auto whitespace-nowrap'>
                         <div className='w-[28%] h-fit bg-slate-200 shadow-lg rounded-xl pb-7 border-2 border-white'>
                             <img src={Blog1} className='rounded-t-2xl'></img>
                             <h1 className='text-2xl px-6 mt-4 font-normal text-gray-600 text-left'>Opening of new office of the company</h1>
@@ -98,7 +161,7 @@ const Home = (props) => {
                                 <h1 className='text-gray-500 text-md'>January 14,2022</h1>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </Layout>
