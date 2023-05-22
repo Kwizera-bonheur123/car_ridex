@@ -5,3 +5,9 @@ ul li ul {
 ul li:hover ul {
   display: block;
 }
+
+.home {
+  background-image: url(./components/Images/joey-banks-YApiWyp0lqo-unsplash.jpg);
+  height: 680px;
+  background-size: cover;
+}

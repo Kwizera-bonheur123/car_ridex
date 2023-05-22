@@ -3,7 +3,7 @@ import Home from './Home'
 import { Link } from 'react-router-dom'
 const Nav = () => {
     return (
-        <div className='w-full h-[70px] bg-slate-200 fixed top-0 shadow-sm'>
+        <div className='w-full h-20 bg-slate-200 fixed top-0 z-[99] shadow-sm'>
             <ul className='flex gap-6 py-5 pl-[30%] text-slate-800 font-semibold'>
                 <li><Link path='/' element={<Home />}>Home</Link></li>
                 <li><Link path='/Blogs' element={<Home />}>Blogs</Link></li>
