@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaSkype } from 'react-icons/fa';
 import { IoMail } from 'react-icons/io5';
 const Footer = () => {
     return (
-        <div className='bg-slate-300 px-[13%]'>
+        <div className='bg-slate-300 px-[7%]'>
             <div className=' pt-[50px] flex justify-start gap-[14%]'>
                 <div>
                     <h1 className=' font-semibold text-slate-900 text-3xl'>Ridex</h1>

@@ -8,6 +8,16 @@ ul li:hover ul {
 
 .home {
   background-image: url(./components/Images/joey-banks-YApiWyp0lqo-unsplash.jpg);
-  height: 680px;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+@media(max-width:768px) {
+  .home {
+    background-image: url(./components/Images/wallpaper.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
 }
