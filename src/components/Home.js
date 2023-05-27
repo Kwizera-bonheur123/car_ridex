@@ -9,7 +9,6 @@ import Blog2 from './Images/blog-2.jpg'
 import Blog3 from './Images/blog-3.jpg'
 import Blog4 from './Images/blog-4.jpg'
 import Blog5 from './Images/blog-5.jpg'
-import Car2 from './Images/car-2.jpg'
 const Home = (props) => {
     const responsive = {
         superLargeDesktop: {
