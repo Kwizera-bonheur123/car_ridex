@@ -39,8 +39,8 @@ const Home = (props) => {
                 <img src={car1} className='h-[42%] w-[44%] rounded-3xl mt-[2%]'></img>
             </div> */}
             <div className='home h-screen'></div>
-            <div className=' bg-slate-600/60 pl-10 pt-[10%] w-full h-screen absolute top-0'>
-                <h1 className='text-4xl font-bold text-slate-300'>THE EASY WAY TO TAKE TO<br></br>TAKEOVER A LEASE<br></br>TRUSTED PROCESS</h1>
+            <div className=' bg-slate-600/60 pl-10 pt-[15%] w-full h-screen absolute top-0'>
+                <h1 className='text-4xl font-semibold text-slate-300'>THE EASY WAY TO TAKE TO<br></br>TAKEOVER A LEASE<br></br>TRUSTED PROCESS</h1>
                 <button className='px-10 py-5 bg-slate-400 text-xl mt-6 rounded-2xl font-bold text-gray-50'>Get Started  &#8594;</button>
             </div>
             <div className='px-[7%]'>

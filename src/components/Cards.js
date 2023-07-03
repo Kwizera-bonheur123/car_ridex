@@ -36,7 +36,7 @@ const Cards = () => {
                         <h1 className='text-xl text-slate-950'>$620/month</h1>
                         <div className='flex gap-3'>
                             <div className='lg:px-4 md:px-2 sm:px-3 px-3 py-3 bg-blue-200 sm:py-3 md:py-2 lg:py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                            <button className='lg:rounded-2xl rounded-lg px-2 py-2 md:rounded-xl sm:rounded-lg bg-blue-400 lg:px-7 md:px-3 sm:px-3 sm:py-2 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Sale now"}</button>
+                            <button className='lg:rounded-2xl rounded-lg px-2 py-2 md:rounded-xl sm:rounded-lg bg-blue-400 lg:px-7 md:px-3 sm:px-3 sm:py-2 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Buy now"}</button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const Cards = () => {
                         <h1 className='text-xl text-slate-950'>$350/month</h1>
                         <div className='flex gap-3'>
                             <div className='lg:px-4 md:px-2 sm:px-3 px-3 py-3 bg-blue-200 sm:py-3 md:py-2 lg:py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                            <button className='lg:rounded-2xl md:rounded-xl px-2 py-2 rounded-lg sm:rounded-lg bg-blue-400 lg:px-7 md:px-3 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Sale now"}</button>
+                            <button className='lg:rounded-2xl md:rounded-xl px-2 py-2 rounded-lg sm:rounded-lg bg-blue-400 lg:px-7 md:px-3 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Buy now"}</button>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Cards = () => {
                             <h1 className='text-xl text-slate-950'>$620/month</h1>
                             <div className='flex gap-3'>
                                 <div className='lg:px-4 md:px-2 sm:px-3 px-3 py-3 bg-blue-200 sm:py-2 md:py-2 lg:py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                                <button className='lg:rounded-2xl md:rounded-x sm:py-3 px-2 py-2 rounded-lg sm:px-2 sm:rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Sale now"}</button>
+                                <button className='lg:rounded-2xl md:rounded-x sm:py-3 px-2 py-2 rounded-lg sm:px-2 sm:rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Buy now"}</button>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ const Cards = () => {
                         <h1 className='text-xl text-slate-950'>$400/month</h1>
                         <div className='flex gap-3'>
                             <div className='lg:px-4 md:px-2 sm:px-3 px-3 py-3 bg-blue-200 sm:py-3 md:py-2 lg:py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                            <button className='lg:rounded-2xl md:rounded-x sm:py-2 px-2 py-2 rounded-lg sm:px-2 sm:rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Sale now"}</button>
+                            <button className='lg:rounded-2xl md:rounded-x sm:py-2 px-2 py-2 rounded-lg sm:px-2 sm:rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Buy now"}</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ const Cards = () => {
                         <h1 className='text-xl text-slate-950'>$400/month</h1>
                         <div className='flex gap-3'>
                             <div className='lg:px-4 md:px-2 sm:px-3 px-3 py-3 bg-blue-200 sm:py-3 md:py-2 lg:py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                            <button className='lg:rounded-2xl md:rounded-x sm:py-2 px-2 py-2 rounded-lg sm:px-2 sm:rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Sale now"}</button>
+                            <button className='lg:rounded-2xl md:rounded-x sm:py-2 px-2 py-2 rounded-lg sm:px-2 sm:rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Buy now"}</button>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ const Cards = () => {
                         <h1 className='text-xl text-slate-950'>$490/month</h1>
                         <div className='flex gap-3'>
                             <div className='lg:px-4 md:px-2 sm:px-3 px-3 py-3 bg-blue-200 sm:py-3 md:py-2 lg:py-4 rounded-full'><FaHeart className='text-blue-400 font-normal' /></div>
-                            <button className='lg:rounded-2xl md:rounded-x sm:py-2 sm:px-2 sm:rounded-lg px-2 py-2 rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Sale now"}</button>
+                            <button className='lg:rounded-2xl md:rounded-x sm:py-2 sm:px-2 sm:rounded-lg px-2 py-2 rounded-lg bg-blue-400 lg:px-7 md:px- sm:px-33sm:py-1 md:py-1 lg:py-2 font-semibold text-white'>{location.pathname == "/rent" ? "Rent now" : "Buy now"}</button>
                         </div>
                     </div>
                 </div>
